@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laos Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="intro">How well do you know Laos?<br> Take this quiz to find out.</div>
+        <div id="start">GO &rarr;</div>
+        <div id="disclaimer">
+            Disclaimer: I'm not a COMP major. Please excuse the messy/inefficient code.<br><br><br>
+            This quiz is based on Laos House Church 4.0 (Fall 2022):<br>
+            Claire Xu, Kevin Chang, Anna Chung, Adrienne Li, Sara Koh,<br>
+            Sarah Kim, Kihan Sung,<br>
+            Brandon Song, Brian Seo, Derek Liang, Audrey Lee,<br>
+            Phillip Seo, Camille Wong, Aaron Long, and Ethan Yu<br><br><br>
+            Questions? Comments? Feedback? Get in touch! &rarr; Kevin Chang, klc8@rice.edu<br>
+            Please include your Social Security number in all correspondence.
+        </div>
+        <div id="quiz" style="display: none">
+            <div id="questionCount"></div>
+            <div id="correctCount"></div>
+            <div id="imgs">
+                <div id="qImg"></div>
+                <div id="anonImg"></div>
+                <div id="fullImg"></div>
+            </div>
+            <div id="question">Who is this?</div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="next">Next &rarr;</div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreModal" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
