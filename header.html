@@ -1,0 +1,113 @@
+<nav>
+    <div id="desktop-nav">
+        <div class="brand">
+            <img src="assets/about/logo.png" alt="KLC Logo"/>
+            <div class="main-choice">
+                <a class="main-link" title="KEVIN CHANG" href="index.html">KEVIN CHANG</a>
+            </div>
+        </div>
+        <ul class="main-menu">
+            <li class="main-choice">
+                <a class="main-link" title="PHOTO" href="photo.html">PHOTO</a>
+            </li>
+            <li class="main-choice">
+                <a class="main-link" title="SPEEDSOLVING" href="speedsolving.html">SPEEDSOLVING</a>
+            </li>
+            <li class="main-choice dropdown">
+                <a class="main-link" title="CODE" href="code.html">CODE</a>
+                <ul class="sub-menu">
+                    <li class="sub-choice">
+                        <a class="sub-link" title="Laos House Church Quiz" href="quiz.html">Laos House Church Quiz</a>
+                    </li>
+                    <li class="sub-choice">
+                        <a class="sub-link" title="Minesweeper Board Generator" href="boardgen.html">Minesweeper Board Generator</a>
+                    </li>
+                    <li class="sub-choice">
+                        <a class="sub-link" title="csTimer Graphing Tool" href="timergraph.html">csTimer Graphing Tool</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="main-choice">
+                <a class="main-link" title="ABOUT" href="about.html">ABOUT</a>
+            </li>
+            <li class="main-choice">
+                <a class="main-link" title="ROADMAP" href="roadmap.html">ROADMAP</a>
+            </li>
+        </ul>
+        <div class="socials">
+            <a href="https://github.com/kevinythgnb" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <a href="https://www.instagram.com/kevinythgnb" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/kevin-l-chang" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+            <a href="mailto:kevinythgnb@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
+        </div>    
+        <div id="hamburger">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+    </div>
+
+    <div id="mobile-nav">
+        <div id="return">
+            <i class="fa-solid fa-xmark fa-lg"></i>
+        </div>
+        <img src="assets/about/logo.png" alt="KLC Logo"/>
+        <ul class="mobile-main-menu">
+            <li class="main-choice">
+                <a class="main-link" title="HOME - KEVIN CHANG" href="index.html">HOME - KEVIN CHANG</a>
+            </li>
+            <li class="main-choice">
+                <a class="main-link" title="PHOTO" href="photo.html">PHOTO</a>
+            </li>
+            <li class="main-choice">
+                <a class="main-link" title="SPEEDSOLVING" href="speedsolving.html">SPEEDSOLVING</a>
+            </li>
+            <li class="main-choice">
+                <a class="main-link" title="CODE" href="code.html">CODE</a>
+            </li>
+            <li class="sub-choice">
+                <a class="sub-link" title="Laos House Church Quiz" href="quiz.html">Laos House Church Quiz</a>
+            </li>
+            <li class="sub-choice">
+                <a class="sub-link" title="Minesweeper Board Generator" href="boardgen.html">Minesweeper Board Generator</a>
+            </li>
+            <li class="sub-choice">
+                <a class="sub-link" title="csTimer Graphing Tool" href="timergraph.html">csTimer Graphing Tool</a>
+            </li>
+            <li class="main-choice">
+                <a class="main-link" title="ABOUT" href="about.html">ABOUT</a>
+            </li>
+            <li class="main-choice">
+                <a class="main-link" title="ROADMAP" href="roadmap.html">ROADMAP</a>
+            </li>
+        </ul>
+        <div class="socials">
+            <a href="https://github.com/kevinythgnb" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <a href="https://www.instagram.com/kevinythgnb" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/kevin-l-chang" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+            <a href="mailto:kevinythgnb@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const hamburgerbtn = document.getElementById("hamburger"),
+          returnbtn = document.getElementById("return"),
+          mobilemenu = document.getElementById("mobile-nav");
+
+    hamburgerbtn.onclick = () => {
+        $("body").css("overflow", "hidden");
+        mobilemenu.style.display = "flex";
+        mobilemenu.classList.add("mobile-nav-show");
+        setTimeout(() => {
+            mobilemenu.style.opacity = "1";
+        }, 1);
+    }
+
+    returnbtn.onclick = () => {
+        mobilemenu.style.opacity = "0";
+        setTimeout(() => {
+            mobilemenu.style.display = "none";
+            mobilemenu.classList.remove("mobile-nav-show");
+        }, 300);
+        $("body").css("overflow", "auto");
+    }
+</script>

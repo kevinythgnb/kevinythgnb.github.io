@@ -3,45 +3,79 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Laos Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Medical student at UT Southwestern Medical Center. Healthcare by day. Photography, speedsolving, coding, and more by night.">
+    <title>Kevin L Chang - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="assets/about/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id="container">
-        <div id="intro">How well do you know Laos?<br> Take this quiz to find out.</div>
-        <div id="start">GO &rarr;</div>
-        <div id="disclaimer">
-            Disclaimer: I'm not a COMP major. Please excuse the messy/inefficient code.<br><br><br>
-            This quiz is based on Laos House Church 4.0 (Fall 2022):<br>
-            Claire Xu, Kevin Chang, Anna Chung, Adrienne Li, Sara Koh,<br>
-            Sarah Kim, Kihan Sung,<br>
-            Brandon Song, Brian Seo, Derek Liang, Audrey Lee,<br>
-            Phillip Seo, Camille Wong, Aaron Long, and Ethan Yu<br><br><br>
-            Questions? Comments? Feedback? Get in touch! &rarr; Kevin Chang, klc8@rice.edu<br>
-            Please include your Social Security number in all correspondence.
-        </div>
-        <div id="quiz" style="display: none">
-            <div id="questionCount"></div>
-            <div id="correctCount"></div>
-            <div id="imgs">
-                <div id="qImg"></div>
-                <div id="anonImg"></div>
-                <div id="fullImg"></div>
+    <div id="home-container">
+
+        <section id="home-top">
+            <hgroup>
+                <h1>Welcome to my page.</h1>
+                <h2>
+                    I have many interests.<br>
+                    Take a look around!
+                    <!-- https://codepen.io/tmrDevelops/pen/vOPZBv -->
+                </h2>
+            </hgroup>
+        </section>
+
+        <section id="home-mid">
+            <div id="home-nav">
+                <img src="assets/about/logo.png" alt="KLC Logo"/>
+                <nav>
+                    <ul id="home-links">
+                        <li>
+                            <a href="photo.html">PHOTO</a>
+                        </li>
+                        <li>
+                            <a href="speedsolving.html">SPEEDSOLVING</a>
+                        </li>
+                        <li>
+                            <a href="code.html">CODE</a>
+                        </li>
+                        <li>
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="roadmap.html">ROADMAP</a>
+                        </li>
+                    </ul>
+                    <ul id="home-socials">
+                        <li>
+                            <a href="https://github.com/kevinythgnb" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kevinythgnb" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/kevin-l-chang" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:kevinythgnb@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>   
+                        </li>
+                    </ul>    
+                </nav>
             </div>
-            <div id="question">Who is this?</div>
-            <div id="choices">
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
-                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+        </section>
+
+        <section id="home-bot">
+            <div id="notice">
+                <h6>(I'm in development! Desktop view recommended.)</h6>
             </div>
-            <div id="next">Next &rarr;</div>
-            <div id="progress"></div>
-        </div>
-        <div id="scoreModal" style="display: none"></div>
+        </section>
+
     </div>
-    <script src="quiz.js"></script>
 </body>
 
 </html>

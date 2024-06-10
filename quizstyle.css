@@ -1,0 +1,211 @@
+#container{
+    font-size: 20px;
+    font-family: Verdana;
+    letter-spacing: 0.5px;
+    margin: 20px auto;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    height: 780px;
+    width: 900px;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+#intro{
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+#start{
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#start:hover{
+    cursor: pointer;
+    font-weight: 700;
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+#disclaimer{
+    position: relative;
+    top: 440px;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+#quiz {
+    width: 900px;
+    height: 780px;
+}
+
+#counts {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 30px;
+}
+
+#questionCount{
+    position: relative;
+    width: fit-content;
+    font-size: 1.5em;
+}
+
+#correctCount{
+    position: relative;
+    width: fit-content;
+    font-size: 1.5em;
+}
+
+#imgs{
+    width: 700px;
+    height: 300px;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+    left: 100px;
+    margin-top: 30px;
+}
+
+#qImg img{
+    width: 375px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+}
+
+#anonImg img{
+    width: 250px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+#fullImg img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+#quiz-question{
+    width: 900px;
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+#choices{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.choice{
+    display: block;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.choice:not(.noHover):hover{
+    cursor: pointer;
+    outline: 2px solid rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+#next{
+    font-weight: normal;
+    width: 150px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#next:not(.noHover):hover{
+    cursor: pointer;
+    font-weight: 700;
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+#counter{
+    font-size: 3em;
+}
+
+#progress{
+    width: fit-content;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.prog{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#scoreModal{
+    background-color: rgb(200, 200, 200);
+    width: 700px;
+    height: 300px;
+    box-shadow: 0px 0px 25px 5px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: -560px;
+    display: none;
+}
+
+#scoreModal img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: relative;
+    top: 35px;
+    left: 275px;
+}
+
+#scoreModal p{
+    position: relative;
+    display: block;
+    margin: 0;;
+    width: 700px;
+    top: 60px;
+    font-size: 1.3em;
+    font-weight: normal;
+    text-align: center;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLC - Speedsolving</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="assets/about/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+
+    <main>
+        <section id="comp-results">
+            <h1>Competition Results</h1>
+            <p>
+                I (occasionally) organize and participate in <span style="font-weight: 400;">official competitions</span> --
+                Follow the link for my <span style="font-weight: 400;">World Cube Association (WCA) profile.</span>
+            </p>
+            <a href="https://www.worldcubeassociation.org/persons/2018CHAN15" target="_blank">Kevin Chang | World Cube Association</a>
+        </section>
+    
+        <section id="faq">
+            <h1>Frequently Asked Questions</h1>
+            <div id="faq-grid">
+                <div class="question-answer">
+                    <div class="question" id="q1">
+                        <p>What's speedsolving/<br>speedcubing/cubing?</p>
+                    </div>
+                    <div class="answer" id="a1">
+                        <p>People try to solve three-dimensional combination (twisty) puzzles, like the 3x3x3 Rubik's Cube, as fast as they can.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question" id="q2">
+                        <p>What's your fastest time/personal record (PR) on the 3x3x3?</p>
+                    </div>
+                    <div class="answer" id="a2">
+                        <p>My PR single is 6.517 and my PR average of 5 is 9.297. I usually solve between 10 to 12 seconds.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question" id="q3">
+                        <p>Do you need to be good at math?</p>
+                    </div>
+                    <div class="answer" id="a3">
+                        <p>Not really. Personally, I can count on 10 fingers, and that's about it.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question" id="q4">
+                        <p>What's your favorite cube to solve?</p>
+                    </div>
+                    <div class="answer" id="a4">
+                        <p>My favorite (and best ranking at competition) events are the "big cubes": 5x5x5, 6x6x6, and 7x7x7.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question" id="q5">
+                        <p>How's it done?</p>
+                    </div>
+                    <div class="answer" id="a5">
+                        <p>10% good hand-eye coordination, 10% good visual-spatial ability, 10% good memory, 70% good old-fashioned practice</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question" id="q6">
+                        <p>How can I get started with learning to solve?</p>
+                    </div>
+                    <div class="answer" id="a6">
+                        <p>Find a tutorial that works for you--there are countless on YouTube and various websites. Then, see previous question--practice, practice, practice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="resources">
+            <h1>Course Resources</h1>
+            <p>I taught <span style="font-weight: 400;">COLL 134: Rubik's Cube/Twisty Puzzle and Speedsolving Theory</span>, a 1-credit elective course at Rice University, for 3 semesters.<p>
+            <h2>From the Syllabus:</h2>
+            <p id="course-intro">
+                In this course, students will learn the mathematical basis of <span style="font-weight: 400;">twisty puzzle behavior</span>, predominant methods of
+                <span style="font-weight: 400;">solving the Rubik's Cube (3x3) and Rubik's Revenge (4x4)</span>, and ways of
+                <span style="font-weight: 400;">constructing solves and critiquing their efficiency</span>. Students should expect to spend time each week
+                practicing solves of the 3x3 and 4x4, commentating on the choices they make to solve increasingly large portions of these puzzles.
+                Students will also regularly analyze solution methods for the 3x3 and 4x4, through both physical manipulation and computer simulation of twisty puzzles.
+            </p>
+            <p>
+                <span style="font-weight: 400;">Below is an archive of course documentation and lecture slides.</span>
+                Among other topics, they include steps for solving the 3x3x3 and 4x4x4.
+            </p>
+            <h2>Documentation</h2>
+            <div id="docs-grid">
+                <div class="doc">
+                    <img src="assets/coll134/lectureimgs/cube notation.png">
+                    <a href="assets/coll134/Notes_on_Cube_Notation.pdf" target="_blank">Notes on Cube Notation</a>
+                </div>
+                <div class="doc">
+                    <img src="assets/coll134/lectureimgs/parity misconceptions.png">
+                    <a href="assets/coll134/Notes_on_Parity_Misconceptions.pdf" target="_blank">Notes on Parity Misconceptions</a>
+                </div>
+            </div>
+            <h2>Lecture Slides</h2>
+            <div id="lectures-grid">
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 1.png">
+                    <a href="assets/coll134/lectureppts/Week 1 - Theory of the 3x3 Cube.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 1</span><br>
+                            <span class="title">Theory of the 3x3 Cube</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 2.png">
+                    <a href="assets/coll134/lectureppts/Week 2 - 3x3 First Layer Cross and Corners.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 2</span><br>
+                            <span class="title">3x3 First Layer Cross and Corners</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 3.png">
+                    <a href="assets/coll134/lectureppts/Week 3 - Editor Tutorial and 3x3 Advanced Cross.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 3</span><br>
+                            <span class="title">Editor Tutorial and 3x3 Advanced Cross</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 4.png">
+                    <a href="assets/coll134/lectureppts/Week 4 - 3x3 Middle Layer Edges and First Two Layers.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 4</span><br>
+                            <span class="title">3x3 Middle Layer Edges and First Two Layers</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 5.png">
+                    <a href="assets/coll134/lectureppts/Week 5 - 3x3 Orient Last Layer and Permute Last Layer.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 5</span><br>
+                            <span class="title">3x3 Orient Last Layer and Permute Last Layer</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 6.png">
+                    <a href="assets/coll134/lectureppts/Week 6 - 3x3 Solve Construction.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 6</span><br>
+                            <span class="title">3x3 Solve Construction</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 7.png">
+                    <a href="assets/coll134/lectureppts/Week 7 - Comparison of Popular 3x3 Advanced Methods.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 7</span><br>
+                            <span class="title">Comparison of Popular 3x3 Advanced Methods</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 8.png">
+                    <a href="assets/coll134/lectureppts/Week 8 - Theory of Higher-Order Regular Cuboids.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 8</span><br>
+                            <span class="title">Theory of Higher-Order Regular Cuboids</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 9.png">
+                    <a href="assets/coll134/lectureppts/Week 9 - 4x4 Centers.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 9</span><br>
+                            <span class="title">4x4 Centers</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 10.png">
+                    <a href="assets/coll134/lectureppts/Week 10 - 4x4 First Eight Edges.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 10</span><br>
+                            <span class="title">4x4 First Eight Edges</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 11.png">
+                    <a href="assets/coll134/lectureppts/Week 11 - 4x4 Last Four Edges.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 11</span><br>
+                            <span class="title">4x4 Last Four Edges</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 12.png">
+                    <a href="assets/coll134/lectureppts/Week 12 - 4x4 3x3 Stage and Parity.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 12</span><br>
+                            <span class="title">4x4 3x3 Stage and Parity</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 13.png">
+                    <a href="assets/coll134/lectureppts/Week 13 - 4x4 Solve Construction.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 13</span><br>
+                            <span class="title">4x4 Solve Construction</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="lecture">
+                    <img src="assets/coll134/lectureimgs/Week 14.png">
+                    <a href="assets/coll134/lectureppts/Week 14 - Theory of Irregular Cuboids and Non-Cuboids.pptx" target="_blank">
+                        <p>
+                            <span class="week">Week 14</span><br>
+                            <span class="title">Theory of Irregular Cuboids and Non-Cuboids</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</body>
+
+</html>

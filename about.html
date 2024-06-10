@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLC - About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="assets/about/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+
+    <main>
+        <div id="bio">
+            <h1>Hi, I'm Kevin!</h1>
+
+            <div id="bio-grid">
+                <div class="bio-pic">
+                    <img src="assets/about/EM2_5456~3.jpg">
+                </div>
+                <div class="bio-text" id="bio-text1">
+                    <p>
+                        I'm a <span style="font-weight: 400;">second-year medical student</span> at <span style="font-weight: 400;">The University of Texas Southwestern Medical School</span>,
+                        currently most interested in specializing in diagnostic or interventional radiology.<br><br>
+                        I previously attended <span style="font-weight: 400;">Rice University</span>, where everyone thought I was a Computer Science major.
+                        Instead, I graduated with a <span style="font-weight: 400;">B.S.</span> in <span style="font-weight: 400;">Biosciences</span>,
+                        concentration in <span style="font-weight: 400;">Cell Biology</span> and <span style="font-weight: 400;">Genetics</span>.
+                    </p>
+                </div>
+                <div class="bio-text" id="bio-text2">
+                    <p>
+                        I grew up in Southern California and Taiwan and am currently based in <span style="font-weight: 400;">Dallas</span>.<br><br>
+                        Life's pretty busy, but I'm always looking for time to try new things. Apart from what's on my website,
+                        I also like to explore Taiwanese culture, stay up-to-date with the latest computer and mobile hardware, and play badminton, pool, and video games.
+                    </p>
+                </div>
+                <div class="bio-pic">
+                    <img src="assets/about/IMG_20211231_002832_599.jpg">
+                </div>
+                <div class="bio-pic">
+                    <img src="assets/about/DSC_0587.jpg">
+                </div>
+                <div class="bio-text" id="bio-text3">
+                    <p>
+                        In visual arts/media, I have experience with portrait and event <span style="font-weight: 400;">photo commissions</span>,
+                        full-service <span style="font-weight: 400;">video production</span>, and a bit of <span style="font-weight: 400;">logo and merchandise design</span>.<br><br>
+                        But, on a typical day, you can find me taking pictures casually in all sorts of genres for fun (See
+                        <span><a id="bio-to-photo" href="photo.html">PHOTO</a></span> page for some of my favorites).
+                    </p>
+                </div>
+                <div class="bio-text" id="bio-text4">
+                    <p>
+                        Interested in having me cover a photoshoot?<br><br>Thinking of organizing a WCA competition?<br><br>Want to roast my front-end skills?<br><br>
+                        Just looking to chat?<br><br><span style="font-weight: 700;"><a id="mail-to" href="mailto:kevinythgnb@gmail.com">Get in touch!</a></span>
+                    </p>
+                </div>
+                <div class="bio-pic">
+                    <img src="assets/about/logo.png">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</body>
+
+</html>

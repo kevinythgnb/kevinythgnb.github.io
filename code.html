@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLC - Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="assets/about/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+
+    <main>
+        <hgroup id="proj-head">
+            <h1>Side Projects</h1>
+            <h2>Simple things made with a healthy dose of Stack Overflow:</h2>
+        </hgroup>
+
+        <div id="proj-grid">
+            <section id="proj-site" class="proj-block">
+                <a href="index.html" class="proj-name">
+                    <p>kevinythgnb.github.io<br>(This Website)</p>
+                </a>
+                <div class="proj-langs">
+                    <i class="fa-brands fa-html5 fa-3x" style="color: #e34c26;"></i>
+                    <i class="fa-brands fa-css3-alt fa-3x" style="color: #264de4;"></i>
+                    <i class="fa-brands fa-js fa-3x" style="color: #f0db4f;"></i>
+                </div>
+                <div class="proj-desc">
+                    <p style="font-weight: 400;">A one-stop shop for everything interesting that I like to share with people, designed and coded completely from scratch.</p>
+                    <p>
+                        Initially, I just wanted a better way to feature my photography (think: limitations of Instagram Highlights).
+                        From there, the site grew bigger, becoming what you see today.
+                        All source code can be found on <a href="https://www.github.com/kevinythgnb/kevinythgnb.github.io" target="_blank">GitHub</a>. Thanks for stopping by!<br><br>
+                        Languages: HTML, CSS, JS
+                    </p>
+                </div>
+            </section>
+
+            <section id="proj-quiz" class="proj-block">
+                <a href="quiz.html" class="proj-name">
+                    <p>Laos House Church Quiz</p>
+                </a>
+                <div class="proj-langs">
+                    <i class="fa-brands fa-html5 fa-3x" style="color: #e34c26;"></i>
+                    <i class="fa-brands fa-css3-alt fa-3x" style="color: #264de4;"></i>
+                    <i class="fa-brands fa-js fa-3x" style="color: #f0db4f;"></i>
+                </div>
+                <div class="proj-desc">
+                    <p style="font-weight: 400;">Kind of like Quizlet for your favorite members/alumni from NLF College Ministry.</p>
+                    <p>
+                        There are/were many people in Laos House Church. Most of them have foreheads. A select few have fiveheads.
+                        It's a good idea to be able to tell them apart.<br>
+                        Fun fact: The Laos Quiz was the original app hosted on this domain. Click for some nostalgia!<br><br>
+                        Languages: HTML, CSS, JS
+                    </p>
+                </div>
+            </section>
+
+            <section id="proj-minesweeper" class="proj-block">
+                <a href="boardgen.html" class="proj-name">
+                    <p>Minesweeper Board Generator</p>
+                </a>
+                <div class="proj-langs">
+                    <i class="fa-brands fa-python fa-3x"></i>
+                </div>
+                <div class="proj-desc">
+                    <p style="font-weight: 400;">Creates Minesweeper boards with 3BV calculation and visualization, according to user parameters.</p>
+                    <p>
+                        I've been playing Minesweeper for a while.
+                        To help train my clearing efficiency, I wrote this script to randomly seed boards with adjustable size and difficulty.<br><br>
+                        Language: Python<br>
+                        Libraries: scikit-image, scipy
+                    </p>
+                </div>
+            </section>
+
+            <section id="proj-cstimer" class="proj-block">
+                <a href="timergraph.html" class="proj-name">
+                    <p>csTimer Graphing Tool</p>
+                </a>
+                <div class="proj-langs">
+                    <i class="fa-brands fa-python fa-3x"></i>
+                </div>
+                <div class="proj-desc">
+                    <p style="font-weight: 400;">Expands on the graphing functionalities found natively in csTimer.</p>
+                    <p>
+                        csTimer is an amazing tool for speedcubers, but its options for visualizing time data are limited.
+                        This script draws box and violin plots for time distribution, as well as line plots of single and ao12 times against solve number and datetime.<br><br>
+                        Language: Python<br>
+                        Libraries: pandas, matplotlib
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</body>
+
+</html>
