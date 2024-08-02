@@ -440,7 +440,7 @@ ul {
     display: block;
     left: 50%;
     transform: translateX(-50%);
-    min-width: fit-content;
+    width: 90%;
     text-align: center;
     color: white;
     font-size: 25px;
