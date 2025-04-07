@@ -31,8 +31,8 @@ Truth be told, I found dermatology to be overwhelmingly stale (no offense to any
 Naturally, I began looking for other topics to occupy my mind, eventually landing back on front-end development.
 As a long-time photographer, I was growing sick of the limitations of Instagram Stories and Highlights for posting my best shots.
 At the same time, I felt that migrating to a different photo-sharing service such as Flickr or VSCO would be futile without a personal portfolio website to show to potential clients.
-Despite possessing experience with the WYSIWYG website buiding services Wix and Squarespace, I knew immediately that I wanted to design and code my portfolio from scratch so that it could most accurately represent my personal philosophies.
-With a WYSIWYG builder, the temptation to use an attractive but generic template would be too strong.
+Despite possessing experience with WYSIWYG CMS, specifically Wix and Squarespace, I knew immediately that I wanted to design and code my portfolio from scratch so that it could most accurately represent my personal philosophies.
+With a WYSIWYG CMS, the temptation to use an attractive but generic template would be too strong.
 <br><br>
 So, I fired VS Code back up for the first time in almost one year and got to work.
 Over a few weeks of here-and-there coding, I put together a rudimentary page structure, added styling, and refined over and over.
