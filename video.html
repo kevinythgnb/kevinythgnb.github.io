@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLC - Video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="assets/about/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+
+    <main>
+        <h1 id="video-heading">VIDEO | Motions</h1>
+        <div id="video-grid">
+            <section class="video-block">
+                <iframe class="video-player" src="https://www.youtube.com/embed/X_DDtqNawy8"></iframe>
+                <div class="video-supplement">
+                    <img src="assets/video/video-summary-taiwan.gif" class="video-gif">
+                    <p class="video-title">2024 | Taiwanese Reflections on Adventure and Aesthetics</p>
+                    <p class="video-desc">
+                        I was overdue for a solo(ish) trip across Taiwan, and what better time than my last summer recess in three years?
+                        Recount these photographic memories with me.
+                    </p>
+                </div>
+            </section>
+
+            <section class="video-block">
+                <iframe class="video-player" src="https://www.youtube.com/embed/eAHmZvWOOTc"></iframe>
+                <div class="video-supplement">
+                    <img src="assets/video/video-summary-sa2022.gif" class="video-gif">
+                    <p class="video-title">2022 | Laos House Church 3.0 Senior Appreciation</p>
+                    <p class="video-desc">
+                        The third edition of Laos HC SA celebrates David Yi.
+                        It features adaptations of 4 Non Blondes' "What's Up?" and Im Chang-Jung's "Soju Hanjan", accompanied by expansive animations and compositions.
+                    </p>
+                </div>
+            </section>
+
+            <section class="video-block">
+                <iframe class="video-player" src="https://www.youtube.com/embed/fJlFvkTYbu4"></iframe>
+                <div class="video-supplement">
+                    <img src="assets/video/video-summary-ftc.gif" class="video-gif">
+                    <p class="video-title">2017 | FTC 9603 Promote Video</p>
+                    <p class="video-desc">
+                        FIRST Tech Challenge's Promote Award recognizes the team video which most successfully advances FIRST's values.
+                        As director, I took an unconventional no-talking approach, winning the Promote Award at a regional tournament.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <h1 id="video-heading">Want to see more?</h1>
+        <div id="channel-link">
+            <span>Check out my channel: </span>
+            <a href="https://www.youtube.com/channel/UCUU1OrNdqg4KxSODCzgPyhg/" target="_blank">Kevin Chang | YouTube</a>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</body>
+
+</html>

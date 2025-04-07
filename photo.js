@@ -23,7 +23,8 @@ document.body.appendChild(modal);
 imgBox.forEach((box, i) => {
     box.addEventListener("click", () => {
         $("body").css("overflow", "hidden");
-        const imgSrc = box.querySelector("img").getAttribute("src");
+        const smallImgSrc = box.querySelector("img").getAttribute("src");
+        const imgSrc = smallImgSrc.split("/small")[0] + smallImgSrc.split("/small")[1]
         const imgCap = box.querySelector("img").getAttribute("alt");
         modalImg.setAttribute("src", imgSrc);
         modalCap.innerHTML = imgCap;
@@ -50,7 +51,7 @@ let prevImgSrc = () => {
     if (currentImgIndex < 0) {
         currentImgIndex = allImgs.length - 1
     }
-    return allImgs[currentImgIndex].src;
+    return allImgs[currentImgIndex].src.split("/small")[0] + allImgs[currentImgIndex].src.split("/small")[1];
 };
 prevBtn.onclick = () => {
     $(modalImg).toggleClass("shown hidden");
@@ -58,9 +59,11 @@ prevBtn.onclick = () => {
     setTimeout(() => {
         modalImg.setAttribute("src", prevImgSrc());
         modalCap.innerHTML = allImgs[currentImgIndex].alt;
+    }, 125);
+    setTimeout(() => {
         $(modalImg).toggleClass("shown hidden");
         $(modalCap).toggleClass("shown hidden");
-    }, 150);
+    }, 250);
 };
 
 const nextBtn = document.getElementById("nextzone");
@@ -69,7 +72,7 @@ let nextImgSrc = () => {
     if (currentImgIndex >= allImgs.length) {
         currentImgIndex = 0
     }
-    return allImgs[currentImgIndex].src;
+    return allImgs[currentImgIndex].src.split("/small")[0] + allImgs[currentImgIndex].src.split("/small")[1];
 };
 nextBtn.onclick = () => {
     $(modalImg).toggleClass("shown hidden");
@@ -77,7 +80,9 @@ nextBtn.onclick = () => {
     setTimeout(() => {
         modalImg.setAttribute("src", nextImgSrc());
         modalCap.innerHTML = allImgs[currentImgIndex].alt;
+    }, 125)
+    setTimeout(() => {
         $(modalImg).toggleClass("shown hidden");
         $(modalCap).toggleClass("shown hidden");
-    }, 150);
+    }, 250);
 };
