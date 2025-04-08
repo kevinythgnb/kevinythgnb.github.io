@@ -59,11 +59,11 @@ prevBtn.onclick = () => {
     setTimeout(() => {
         modalImg.setAttribute("src", prevImgSrc());
         modalCap.innerHTML = allImgs[currentImgIndex].alt;
-    }, 125);
+    }, 100);
     setTimeout(() => {
         $(modalImg).toggleClass("shown hidden");
         $(modalCap).toggleClass("shown hidden");
-    }, 250);
+    }, 200);
 };
 
 const nextBtn = document.getElementById("nextzone");
