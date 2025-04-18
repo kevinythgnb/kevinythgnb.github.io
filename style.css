@@ -417,6 +417,18 @@ ul {
     #media-grid {
         width: 374px;
         grid-template-columns: repeat(1, 1fr);
+        .media-container {
+            width: 80vw;
+            height: auto;
+            aspect-ratio: 3/5;
+            max-width: 330px;
+        }
+        img {
+            width: 80vw;
+            height: auto;
+            aspect-ratio: 3/5;
+            max-width: 330px;
+        }
     }
 }
 
@@ -819,8 +831,9 @@ ul {
         }
     }
     .video-gif {
-        width: 320px;
-        height: 180px;
+        width: 300px;
+        height: auto;
+        aspect-ratio: 16/9;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1414,13 +1427,6 @@ ul {
     padding: 0;
 }
 
-@media (max-width: 850px) {
-    #bio-grid {
-        grid-template-columns: repeat(1, 1fr);
-        width: 400px;
-    }
-}
-
 .bio-pic {
     display: block;
     width: 400px;
@@ -1484,6 +1490,39 @@ ul {
 
 #mail-to:hover {
     color: red;
+}
+
+@media (max-width: 850px) {
+    #bio-grid {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 400px;
+        width: 91vw;
+    }
+    .bio-pic {
+        max-width: 400px;
+        max-height: 400px;
+        width: 91vw;
+        height: 91vw;
+        img {
+            max-width: 400px;
+            max-height: 400px;
+            width: 91vw;
+            height: 91vw;
+        }
+    }
+    .bio-text {
+        max-width: 400px;
+        max-height: 400px;
+        width: 91vw;
+        height: 91vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .bio-text {
+        max-height: fit-content;
+        height: fit-content;
+    }
 }
 
 /* --- ABOUT PAGE END --- */

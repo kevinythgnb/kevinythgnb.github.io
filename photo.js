@@ -59,11 +59,11 @@ prevBtn.onclick = () => {
     setTimeout(() => {
         modalImg.setAttribute("src", prevImgSrc());
         modalCap.innerHTML = allImgs[currentImgIndex].alt;
-    }, 100);
+    }, 150);
     setTimeout(() => {
         $(modalImg).toggleClass("shown hidden");
         $(modalCap).toggleClass("shown hidden");
-    }, 200);
+    }, 300);
 };
 
 const nextBtn = document.getElementById("nextzone");
@@ -80,9 +80,10 @@ nextBtn.onclick = () => {
     setTimeout(() => {
         modalImg.setAttribute("src", nextImgSrc());
         modalCap.innerHTML = allImgs[currentImgIndex].alt;
-    }, 125)
+    }, 150)
     setTimeout(() => {
         $(modalImg).toggleClass("shown hidden");
         $(modalCap).toggleClass("shown hidden");
-    }, 250);
+    }, 300);
+
 };
