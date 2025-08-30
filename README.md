@@ -1,38 +1,34 @@
 # Welcome to my portfolio!
-Here, you'll find the products from interests of mine that I think are worth sharing.
-Photos, videos, digital designs, documentation from my Rubik's Cube course at Rice, niche Python scripts--it's all here in one place.
+Here, you'll find the products of interests of mine that I think are worth sharing with people.
+Photos, videos, digital designs, documentation from my Rubik's Cube course at Rice, basic Python scripts--it's all here in one place.
 <br><br>
 I hope you enjoy what you see as much as I did creating it!
 <br><br>
--klc :)
+-klc
 
 # So... why is a medical student writing HTML/CSS?
-9 times out of 10, I look more like a West Coast tech bro than a healthcare professional.
-So, allow me to explain.
 
 ## March 2023
-I was a part-time senior in my final semester at Rice University with too much time on my hands.
-Making good progress on my extracurricular activities, I had already begun revisiting Python programming and LaTeX document preparation in the prior month.
+I was a part-time senior in my final semester at Rice University.
+With too much time on my hands, I decided to revisit Python programming and LaTeX document preparation.
 The last time I coded was in middle school, when I wrote a Python script for a self-directed project in 8th grade English class.
-Now, I thought I would challenge myself by jumping into front-end development--learning HTML, CSS, and JavaScript.
+Now, I thought I would challenge myself by also trying out front-end development--learning HTML, CSS, and JavaScript.
 <br><br>
-A good friend of mine from high school, also a pre-medical student with a knack for coding, built a barebones but interactive site on GitHub Pages allowing users to rank Marvel Cinematic Universe characters based on personal preference.
-Having now seen the ease with which someone could write functional HTML/CSS/JS and host for free using GitHub, I got the idea to make an online quiz testing how well people in my church college ministry knew the members of my small group.
+A good friend of mine from high school, also a pre-medical student with a knack for coding, had just built a barebones but interactive site on GitHub Pages allowing users to rank Marvel Cinematic Universe characters based on personal preference.
+Having now seen the ease with which someone could write functional HTML/CSS/JS and host for free on GitHub, I got the idea to make an online quiz testing how well people in my church college ministry could recognize the members of my small group.
 <br><br>
 It took about a week of studying the documentation, perusing Stack Overflow, writing code, and generating the necessary assets, to create this quiz, which was well-received by both my small group and the greater college ministry.
-By then, I was needing to think more carefully about my future plans, with undergraduate commencement in just two months, zero medical school acceptances thus far, and a looming re-application process.
-Feeling accomplished enough with such an introduction to front-end development, I shifted my attention to other matters.
+Feeling accomplished enough with such an introduction to front-end development, I shifted my focus to post-graduate plans, with undergraduate commencement in just two months.
 
 ## January 2024
-Thankfully, I received an acceptance to UT Southwestern Medical School two days before commencement, after months in out-of-state interviewee purgatory.
-Fast-forwarding another several months, I finished the first semester of our basic science curriculum and began the first organ system block--the Musculoskeletal and Skin course.
+Fast-forwarding several months, I finished the first semester of medical school and began our first organ system block--the Musculoskeletal and Skin course.
 Truth be told, I found dermatology to be overwhelmingly stale (no offense to any skin lovers/experts reading this--it's an important and necessary specialty).
 <br><br>
 Naturally, I began looking for other topics to occupy my mind, eventually landing back on front-end development.
 As a long-time photographer, I was growing sick of the limitations of Instagram Stories and Highlights for posting my best shots.
 At the same time, I felt that migrating to a different photo-sharing service such as Flickr or VSCO would be futile without a personal portfolio website to show to potential clients.
-Despite possessing experience with WYSIWYG CMS, specifically Wix and Squarespace, I knew immediately that I wanted to design and code my portfolio from scratch so that it could most accurately represent my personal philosophies.
-With a WYSIWYG CMS, the temptation to use an attractive but generic template would be too strong.
+Despite possessing experience using WYSIWYG CMS, specifically Wix and Squarespace, I knew immediately that I wanted to design and code my portfolio from scratch so that it could most accurately represent my personal philosophies.
+I briefly considered Cargo, but with a WYSIWYG CMS, the temptation to use an attractive yet generic template would be too strong.
 <br><br>
 So, I fired VS Code back up and got to work.
 Over a few weeks of here-and-there coding, I put together a rudimentary page structure, added styling, and refined over and over.
