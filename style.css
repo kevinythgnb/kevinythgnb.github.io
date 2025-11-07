@@ -957,6 +957,53 @@ ul {
     }
 }
 
+#unofficial-results {
+    width: 100%;
+    text-align: center;
+}
+
+#results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    table {
+        border-collapse: collapse;
+        width: 480px;
+    }
+    td, th {
+        text-align: left;
+        padding: 10px;
+    }
+    td {
+        font-weight: 400;
+    }
+    tr:nth-child(odd) {
+        background-color: rgb(240, 240, 240);
+    }
+    tr:nth-child(even) {
+        background-color: rgb(200, 200, 200);
+    }
+}
+
+@media (max-width: 1030px) {
+    #results-grid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 480px;
+    }
+}
+
+@media (max-width: 510px) {
+    #results-grid {
+        width: 100%;
+        table {
+            width: 100%;
+        }
+    }
+}
+
 #faq {
     width: 100%;
     text-align: center;
@@ -1059,6 +1106,15 @@ ul {
 #resources {
     width: 100%;
     text-align: center;
+}
+
+#course-link {
+    font-weight: 700;
+    transition: color 300ms;
+}
+
+#course-link:hover {
+    color: red;
 }
 
 #course-intro {
@@ -1474,12 +1530,12 @@ ul {
     }
 }
 
-#bio-to-photo {
+.bio-to-media {
     font-weight: 700;
     transition: color 300ms;
 }
 
-#bio-to-photo:hover {
+.bio-to-media:hover {
     color: white;
 }
 
@@ -1518,7 +1574,7 @@ ul {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 402px) {
     .bio-text {
         max-height: fit-content;
         height: fit-content;
