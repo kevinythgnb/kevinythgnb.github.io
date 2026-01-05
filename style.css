@@ -49,6 +49,12 @@ ul {
     justify-content: space-between;
     font-family: "Unna";
     letter-spacing: 1.5px;
+    a {
+        transition: color 300ms;
+    }
+    a:focus {
+        color: red;
+    }
 }
 
 .brand {
@@ -716,6 +722,10 @@ ul {
         grid-template-columns: repeat(8, 1fr);
         max-width: 2000px;
     }
+}
+
+#gallery-controls {
+    text-align: center;
 }
 
 /* --- PHOTO PAGE END --- */
